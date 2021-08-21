@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartas</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playing cards game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../build/css/styles.css" />
     <script src="../build/index.js" type="module"></script>
-</head>
-<body>
-    <h1>cartas</h1>
-    <div id="cartas"></div>
-</body>
+  </head>
+  <body>
+    <h1>Playing cards game</h1>
+    <div id="cards" class="board">
+      <div id="opponent-left" class="counter">34</div>
+      <div id="opponent-current" class="card">🂤</div>
+      <div id="result">won</div>
+      <button id="next">Next</button>
+      <div id="me-left" class="counter">12</div>
+      <div id="me-current" class="card red">🃞</div>
+    </div>
+  </body>
 </html>
